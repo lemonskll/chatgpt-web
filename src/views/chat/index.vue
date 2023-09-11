@@ -488,7 +488,7 @@ onUnmounted(() => {
       <div class="flex items-center justify-between space-x-2">
         <HoverButton tooltip="点击关闭或开启联网功能，开启后会自动从互联网获得信息来回答您，关闭联网能极大加快响应速度">
             <span class="text-xl text-[#4f555e]" @click="handleClear">
-              <!-- <SvgIcon icon="ri:delete-bin-line" /> -->
+              <SvgIcon icon="ri:delete-bin-line" />
               <span style="color: #2979ff; width: 56px; display: inline-block;" v-if="getEnabledNetwork">联网开启</span>
               <span style="color: red; width: 56px; display: inline-block;" v-if="!getEnabledNetwork">联网关闭</span>
             </span>
